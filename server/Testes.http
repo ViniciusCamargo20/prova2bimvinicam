@@ -1,0 +1,49 @@
+###
+GET http://localhost:1234/
+
+###
+GET http://localhost:1234/dashboard
+
+###
+GET http://localhost:1234/2025/1
+
+###
+GET http://localhost:1234/5f483ea0659fd40bf4e726f1
+
+###
+DELETE http://localhost:1234/
+
+###
+POST http://localhost:1234/
+Content-Type: application/json
+
+{
+    "date": "2021-10-24",
+    "credits":
+    [
+        {
+            "name": "Teste",
+            "value": 5000
+        },
+        {
+            "name": "Teste teste",
+            "value": 375
+        }
+    ],
+    "debits":
+    [
+        {
+            "name": "Teste Teste teste",
+            "value": 100,
+            "status": "PAGO"
+        }
+    ]
+}
+
+###
+POST http://localhost:1234/
+Content-Type: application/json
+
+{
+    "date": "2020-09-24T00:00:00.000Z"
+}
